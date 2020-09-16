@@ -2,6 +2,7 @@
 
 #Install the package kmod-ipt-nat6
 # opkg update && opkg install kmod-ipt-nat6
+wget https://github.com/wuyaos/NAT6/blob/offline/nat6
 
 #Change the first letter of the "IPv6 ULA Prefix" from f to d
 uci set network.globals.ula_prefix="$(uci get network.globals.ula_prefix | sed 's/^./d/')"
